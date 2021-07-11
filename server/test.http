@@ -1,0 +1,33 @@
+get http://localhost:3001/api/memes/2
+
+###
+POST http://localhost:3001/api/createUser
+Content-Type: application/json
+
+{"email":"mohamad","password":"m2","name":"mohamad mohamad"}
+
+###
+POST http://localhost:3001/api/sessions
+Content-Type: application/json
+
+{"username":"mohamad_m.2@live.com","password":"m2"}
+
+
+###
+put http://localhost:3001/api/users/mohamad
+Content-Type: application/json
+
+{"name":"mohamad"}
+
+
+####
+DELETE  http://localhost:3001/api/users/mohamad2
+
+####
+DELETE  http://localhost:3001/api/users/mohamad
+####
+DELETE  http://localhost:3001/api/sessions/current
+
+####
+
+get  http://localhost:3001/api/sessions/current

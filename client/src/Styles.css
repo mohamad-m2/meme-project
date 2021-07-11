@@ -1,0 +1,268 @@
+.logo{
+    color: rgb(30, 153, 153);
+    width: 45px;
+    height: 45px;
+}
+.logo_text{
+    color: rgb(30, 153, 153)!important;
+    font-weight: bold;
+    font-size: x-large;
+    font-family:cursive;
+    font-style: italic;
+
+}
+
+.icon{
+    color: rgb(30, 153, 153);
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+}
+.mybtn{
+    color: rgb(30, 153, 153);
+    border-color: rgb(30, 153, 153);;
+    border-width: 2px;
+    font-size: large;
+    
+}
+.mybtn:hover .icon {
+    color: #292b2c;
+}
+.mybtn:hover{
+    background-color:rgb(30, 153, 153);
+    border-top-color: rgb(30, 153, 153);
+    
+}
+.dropdown-content {
+    right: 0;
+  }
+.login-model{
+    position: absolute;
+    top: 50%;
+    
+    min-width: 280px;
+    left: 50%;
+    -ms-transform: translate(-10%, -50%);
+    transform: translate(-50%, -50%);
+    border-Radius:25px;
+
+}
+.login-modal-text{
+    text-align: center;
+  }
+
+.login-title{
+    color:black ;
+  }
+
+.error-border-login{
+    outline: none;
+    border-color: #e03131;
+    box-shadow: 0 0 5px #e03131;
+  }
+  
+.validity-error-login{
+    color: #e03131;
+  }
+.validity-error{
+    color: #e03131;
+  }
+.error-border{
+    outline: none;
+    border-color: #e03131;
+    box-shadow: 0 0 5px #e03131;
+  }
+.image-list{
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .side{
+    border: none;
+    background-color: rgb(28, 29, 39);
+    }
+  .active2
+  {
+    border-radius: 10px;
+    border-color: rgb(30, 153, 153);
+    background-color: rgb(30, 153, 153);
+    background-size: 0px;
+
+  }
+  
+
+
+.list-group{
+    max-height: 100%;
+    
+    overflow:scroll; 
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    
+}
+.list-group::-webkit-scrollbar {
+  width: 15px;
+
+}
+.list-group::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+.list-group::-webkit-scrollbar-thumb {
+  background: rgb(19, 119, 119); 
+  border-radius: 10px;
+}
+.image-creation{
+  background-color: rgb(20, 21, 34);
+}
+.image-fluid{
+
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+.input-side{
+  background-color:rgb(28, 29, 39);
+  overflow:hidden;
+}
+.color-button{
+  width:25px;
+  height: 25px;
+  border-color: snow;
+  padding: 2px;
+}
+.font-button{
+  width:30%;
+  height: 10%;
+  
+}
+.color-fluid{
+
+ 
+  height: 100%;
+  max-height: 300px;
+  width:auto!important;
+  max-width: 200px;
+}
+
+.privacy-input{
+  
+   width: 32px;
+   height: 32px;
+
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 5px;
+   margin-left: 10px;
+   padding: 3px;
+   
+}
+
+.privacy-input-private{
+  border-color: rgba(221, 18, 18, 0.863) ;
+  color: rgba(221, 18, 18, 0.863) ;
+}
+.privacy-input-private:hover{
+  border-color: rgba(199, 4, 4, 0.678) ;
+  color: rgba(199, 4, 4, 0.678) ;
+}
+
+.privacy-input-public{
+  border-color: rgba(36, 189, 9, 0.863) ;
+  color: rgba(36, 189, 9, 0.863) ;
+}
+.privacy-input-public:hover{
+  border-color: rgba(36, 163, 14, 0.644) ;
+  color: rgba(36, 163, 14, 0.644) ;
+}
+.centered-image-warning{
+
+  border-color:  #e03131;;
+  border-width:  6px;
+  margin: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0 0 5px #e03131;
+}
+
+.centered-image-text-warning{
+  color: #e03131;
+  font-size: x-large;
+}
+.text-field-warning{
+
+  border-color:  #e03131;;
+  border-width:  3px;
+  border-radius: 10px;
+  border-style:solid;
+  box-shadow: 0 0 5px #e03131;
+}
+.field-text-warning{
+  color: #e03131;
+  font-size: medium;
+}
+.back{
+  background-color: rgba(21, 24, 42, 0.89);
+}
+
+.privacy-public{
+  color: rgba(36, 189, 9, 0.863) ;
+
+}
+.privacy-private{
+  color: rgba(221, 18, 18, 0.863) ;
+}
+
+.show-meme{
+  
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  border-radius: 20px;
+}
+.title{
+  font-size: xx-large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.aa{
+  color: #D3D3D3;
+  cursor: none;
+  text-decoration: none;
+}
+.aa:hover{
+  color:#D3D3D3;
+  cursor:inherit
+}
+
+.text-figure2{
+  position:absolute;
+ 
+  color:white;
+ 
+ 
+ }
+ .text-figure{
+
+  background-color: rgb(0, 0, 0, 0.5);
+ 
+ }
+.privateDisable{
+  border-color: rgba(163, 3, 3, 0.678) ;
+  color: rgba(163, 3, 3, 0.678) ;
+ }
+
+ .not-clicked
+ {
+color: rgba(117, 116, 116, 0.883);
+ }
+ .not-clicked:hover{
+   color: rgba(105, 104, 104, 0.692);
+ }
+ .clicked{
+color:rgba(5, 73, 200, 0.993)
+ }
+ .clicked:hover{
+  color:rgba(3, 68, 189, 0.746)
+   }
