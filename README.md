@@ -68,11 +68,56 @@
 
 ## Main React Components
 
-- `ListOfSomething` (in `List.js`): component purpose and main functionality
-- `GreatButton` (in `GreatButton.js`): component purpose and main functionality
-- ...
+- `LoginForm` (in `LoginPage.js`): a form for loging in
+  - text box to fill the email and password 
+  - an eye icon to show or hide the password
+  - a home button that redirect the user to home page , and a sign up button that redirect the user to sign up page
+  - a login button that validate evrything and send the login request to the server + sum error message functionality
 
-(only _main_ components, minor ones may be skipped)
+- `CreateUserForm` (in `SignUp.js`): a form forcreating a new user
+  - text box to fill the name email , password and to confirm password 
+  - 2 eye icon to show or hide the passwords
+  - a create user button that validate evrything and send  create user request to the database , with messages for validation (exmaple password and confirm password are diff)
+
+- `HomePage` (in `HomePage.js`) : a list of bootsrap cards , each card contain:
+  - the image of the meme without the texts as a preview
+  - the `by user` field that spercify the creator ofthe meme
+  - meme title
+  - a set of buttons : 
+    -check out to check the meme and redirect to the home/mainpage/:id 
+    -copy which appear only if the user is authenticated (creator) and preload the meme creation page with the choosen meme to copy
+    -delete appear only if the authenticated user is the creator of the meme , delete the meme
+  - a time attribute which show how much time passed since the meme creation
+  - a privacy label to show the privacy state of the meme
+  note :the homepage is used to show the list of users meme in Mymeme route by specifying a parameter (mymeme=1)
+
+- `Elements` (in `navbar.js`): a set of 3 buttons
+  - home button that redirect the user to mainpage 
+  - create button that redirect user to the creation page
+  - myMeme button which redirect user to his meme page
+  - only the home button is shown in case user is not authenticated
+
+-`User_icon` (in `navbar.js`): contain the login and log out functionality
+  -login is a button that redirect user to login page
+  -log out is an element in dropdown menu that appear after clicking on the user icon 
+
+-`Meme` (in `memeShow.js`):a page to show the meme :
+  -image of the meme with all its texts
+  -the user and the meme title
+  -the copy and delete button same as in card but delete here redirect to homepage
+  -like and dislike icons to like or dislike the meme + nb likes and dislike for the meme
+  -time which show how much time passed since the meme creation
+
+-`ImageList` (in `createMeme.js`): a list to show the meme background images tonselect from , it wont be visible in case of a copy
+
+-`Fields` (in `createMeme.js`): a form to fill the meme attribute
+  -a text fied for title
+  - color selector 
+  - dropdown for font type
+  - 3 multyline text field for meme texts
+  - a number input to change the size of texts
+  - privacy input , keep the box behind the text input 
+  - save button that validate that at least one text is filled +title and an image is choosen and save the meme
 
 ## Screenshot
 
