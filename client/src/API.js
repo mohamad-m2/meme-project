@@ -104,7 +104,7 @@ else {
 
 
 async function LoggeIn(credentials){
-    console.log(credentials)
+   
     let response=await fetch('/api/sessions',{
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

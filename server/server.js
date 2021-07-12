@@ -380,7 +380,7 @@ app.delete('/api/sessions/current', (req, res) => {
 
 app.get('/api/sessions/current', (req, res) => {
   if(req.isAuthenticated()) {
-    res.status(200).json(req.user);}
+    res.status(200).json({email:req.user.email,name:req.user.name});}
   else
     res.status(401).json({error: 'Unauthenticated user!'});;
 });
