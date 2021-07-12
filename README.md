@@ -1,12 +1,15 @@
-# Exam #1234: "Exam Title"
-## Student: s123456 LASTNAME FIRSTNAME 
+# Exam #2: "Meme Generator"
+## Student: s287821 MOHAMAD MOHAMAD
 
 ## React Client Application Routes
 
-- Route `/`: page content and purpose
-- Route `/something/:param`: page content and purpose, param specification
-- ...
-
+- Route `/`: redirect to page home/mainPage
+- Route `/home/mainPage`: this page show the list of memes (as a preview of each meme) that the user can check , public memes unauthenticated user and all memes for authenticated ones
+- Route `/home/mainPage/:id` :this route show the actual meme content of the meme specified with parameter id , further more authenticated users can like or dislike the meme from this page
+- Route `/login` :a route for the user to login to his account
+- Route `/user` : a route to sign up
+- Route `/home/create`: a route for the page where creator generate a meme
+- Route `/home/Mymemes`: a route similar to mainPage but it show the list of memes belonging to the current user only 
 ## API Server
 
 - POST `/api/login`
