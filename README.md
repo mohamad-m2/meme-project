@@ -121,7 +121,7 @@
 
 ## Screenshot
 
-![Screenshot](./img/create.jpg)
+![Screenshot](./img/create.png)
 
 ## Users Credentials
 
