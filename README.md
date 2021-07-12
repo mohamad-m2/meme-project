@@ -52,7 +52,7 @@
   - check if previous like or dislike event occured for meme (id) and current user if a dislike event occured return error
   if a like event occured delete it and add the new dislike event if none occured add the new dislike event
 
-- POST `/api/dislike/:id`
+- POST `/api/createUser`
   - name,email,password
   - check if email is used , if not create user else return a email is used error message
   
@@ -60,9 +60,11 @@
 
 ## Database Tables
 
-- Table `users` - contains xx yy zz
-- Table `something` - contains ww qq ss
-- ...
+- Table `users` - contains name ,email, hashpassword
+- Table `layout` - contains layout id , the image  , the align1 of text1,align2 of text2,align3 of text3
+- Table `memes` - contains meme id , the title  , private,user that the meme belong to , date of creation , text1 , text2 , text3 , font type, color, size of text , layout id that link the meme to its layout of table layout , box attribute wich can be 0 or 1 to specify if the user want a faded black box behind the text in case the background image is too shiny ,nblikes , nb dislikes
+- Table `likes` - contains meme_id ,user, like_dislike event  0 for dislike 1 for like 
+- 2 Triggers  one for insert into likes and one for delete to update the nb likes and dislikes of the meme 
 
 ## Main React Components
 
