@@ -125,5 +125,7 @@
 
 ## Users Credentials
 
-- username, password (plus any other requested info)
-- username, password (plus any other requested info)
+- mohamad@m.com, password :mohamad2 
+- jack@hotmail.com, ja123 
+- judy@j.com ,jy111
+- jad@live.com,jad-jad

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { CardDeck, Container, Card, Button } from 'react-bootstrap' ;
 import { Link,Redirect } from 'react-router-dom';
 import {IoLockClosed,IoLockOpen} from 'react-icons/io5'
-import API from './API' ; 
+import API from './API.js' ; 
 import dayjs from 'dayjs' ;
 import background from './1.jpg'
 var relativeTime = require('dayjs/plugin/relativeTime')

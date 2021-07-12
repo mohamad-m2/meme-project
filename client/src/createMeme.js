@@ -52,7 +52,7 @@ let Fields=(props)=>{
 
         if(text_validity>0 && title_validity &&image_validity)
         {
-            console.log(props.image)
+            
             let meme={title:props.title,image:props.image.image,private:props.private*1,
             font:props.Font,size:props.size,color:props.color,box:props.box}
             let j=1
@@ -68,9 +68,12 @@ let Fields=(props)=>{
 
                 
             }
-          
-            API.AddMeme(meme)
+          let save=async()=>{
+            let r= await API.AddMeme(meme)
             window.location.replace('/')
+          }
+          save()
+            
             
         }
 

@@ -8,8 +8,8 @@ const db = new sqlite.Database('./memes.db', sqlite.OPEN_READWRITE | sqlite.OPEN
   });
 
 // create tables only for the first time
-
-/*db.run('create table users (email nvarchar(25) primary key , name nvarchar(25),hashpass text ) ',(err)=>{
+/*
+db.run('create table users (email nvarchar(25) primary key , name nvarchar(25),hashpass text ) ',(err)=>{
     if(err)
     console.log('users is not created')
     else
@@ -37,26 +37,29 @@ db.run('create table likes (meme_id integer , user nvarchar(25),like_dislike int
     else
     console.log('likes done')
 })
+
+
 */
 /*
-db.run('CREATE TRIGGER  newlike2  AFTER INSERT ON likes \
+db.run('CREATE TRIGGER  newlike  AFTER INSERT ON likes \
 BEGIN \
-update memes set likes=likes+new.like_dislike , dislikes=dislikes+1-new.like_dislike;\
+update memes set likes=likes+new.like_dislike , dislikes=dislikes+1-new.like_dislike where id=new.meme_id;\
 END;',(err)=>{
     if(err)
     console.log('likes is not created')
     else
     console.log('likes done')
-})*/
+})
 
-/*
-db.run('CREATE TRIGGER  newlike  AFTER DELETE ON likes \
+
+db.run('CREATE TRIGGER  oldlike  AFTER DELETE ON likes \
 BEGIN \
-update memes set likes=likes-old.like_dislike , dislikes=dislikes-1+old.like_dislike;\
+update memes set likes=likes-old.like_dislike , dislikes=dislikes-1+old.like_dislike where id=old.meme_id;\
 END;',(err)=>{
     if(err)
     console.log('likes is not created')
     else
     console.log('likes done')
-})*/
+})
+*/
 module.exports = db ;
